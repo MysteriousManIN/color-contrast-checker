@@ -1,0 +1,170 @@
+/* @import "https://fontfamilies.com/0/typeface/css/?display=swap&family=Product+Sans|Sang+Bleu+Empire"; */
+
+/*---- fonts ----*/
+
+@font-face{
+    font-family: 'Product Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://vectoricons.com/typefaces/coll/p/Product%20Sans/woff/ProductSans-Regular.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Product Sans';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://vectoricons.com/typefaces/coll/p/Product%20Sans/woff/ProductSans-Bold.woff') format('woff');
+}
+
+/*---- icons ----*/
+
+.remixicon_os20_file-copy {
+    --path: path('M 7 6 V 3 A 1 1 0 0 1 8 2 H 20 A 1 1 0 0 1 21 3 V 17 A 1 1 0 0 1 20 18 H 17 V 21 C 17 21.552 16.55 22 15.993 22 H 4.007 A 1.001 1.001 0 0 1 3 21 L 3.003 7 C 3.003 6.448 3.453 6 4.01 6 H 7 Z M 5.003 8 L 5 20 H 15 V 8 H 5.003 Z M 9 6 H 17 V 16 H 19 V 4 H 9 V 6 Z')
+}
+
+*[class^='remixicon_'], *[class*=' remixicon_']{
+    --size: 24;
+    --color: #000;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-color: var(--color);
+    clip-path: var(--path);
+    transform: scale(calc(var(--size)/24))
+}
+
+/*---------------*/
+
+:root{
+
+    --ff_p: "Product Sans", sans serif;
+    /* --ff_s: "Sang Bleu Empire", serif; */
+
+    --fs_1: 8px;
+    --fs_2: 10px;
+    --fs_3: 12px;
+    --fs_4: 14px;
+    --fs_5: 16px;
+    --fs_6: 18px;
+    --fs_7: 20px;
+    --fs_8: 22px;
+    --fs_9: 24px;
+
+    --c_0:hsl(0 0% 99%);
+    --c_1:hsl(0 0% 12%);
+    --c_2:#ebebeb;
+    --c_3:#1f1f1f;
+    --c_4:hsl(0 0% 80%);
+    --c_5:hsl(0 0% 96%);
+
+    --c_red_bg:#FFE7E7;
+    --c_red_fg:#9C0000;
+    --c_red_1:#9C000033;
+
+    --c_orange_bg:#FFF1E7;
+    --c_orange_fg:#873600;
+    --c_orange_1:#87360033;
+
+    --c_yellow_bg:#FFF8D6;
+    --c_yellow_fg:#704900;
+    --c_yellow_1:#70490033;
+
+    --c_green_bg:#d2fbd0;
+    --c_green_fg:#0d5f07;
+    --c_green_1:#0d5f0733;
+
+    --c_dgreen_bg:#CBFF96;
+    --c_dgreen_fg:#045400;
+    --c_dgreen_1:#83FF7D;
+
+    --c_w:#ffffff;
+    --c_t:transparent;
+
+}
+
+html{
+    -webkit-tap-highlight-color:transparent;
+}
+
+body{
+    margin:0;
+    background-color:var(--c_0);
+    font-family:var(--ff_p);
+    font-size:var(--fs_5);
+}
+
+main > section{
+    padding:64px 128px;
+    box-sizing:border-box
+}
+
+.dac-box{
+    user-select: none;
+    text-align:right;
+    writing-mode:vertical-rl;
+    padding:8px 4px;
+    background-color:var(--c_w);
+    position:fixed;
+    right:0;
+    bottom:0;
+    z-index:10;
+}
+
+.dac-box > span{
+    display:block;
+}
+
+.dac-box > span:nth-child(1){
+    font-size:var(--fs_1);
+}
+
+.dac-box > span:nth-child(2){
+    font-size:var(--fs_3);
+}
+
+#clr-picker{
+    background-color:var(--c_w);
+    border-radius:0;
+    box-shadow:8px 8px 16px 0 hsl(0 0% 0% / 8%);
+}
+
+#clr-color-area{
+    border-radius:0;
+}
+
+#clr-picker .clr-hue{
+    border-radius:0;
+}
+
+#clr-color-value{
+    font-family:var(--ff_p);
+    font-size:var(--fs_5);
+    text-transform:uppercase;
+    border-radius:0;
+    border:none;
+    border-bottom:1px solid var(--c_4);
+    box-sizing:border-box;
+}
+
+#clr-hue-marker{
+    box-shadow:none;
+}
+
+#clr-color-preview{
+    display:none;
+}
+
+#clr-color-value{
+    margin:16px auto;
+}
+
+
+@media screen and (min-width:320px) and (max-width:480px) and (orientation:portrait){
+
+    main > section{
+        padding:64px 32px;
+    }
+
+}

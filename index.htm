@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+	<title>Color Contrast Checker</title>
+	<meta name="theme-color" content="#ebebeb" >
+	<meta name="author" content="Chetan Saini" >
+	<meta name="decription" content="Color contrast checker" >
+	<meta name="keyword" content="color, contrast, colors, typography" >
+	<link rel="preload" as="style" href="main.css" >
+	<link rel="preload" as="style" href="coloris.min.css" >
+	<!-- <link rel="preload" as="script" href="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" > -->
+	<link rel="preload" as="script" href="https://cdn.com/google/google_jquery.min.js" >
+	<link rel="preload" as="script" href="coloris.min.js" >
+	<link rel="stylesheet" href="main.css" >
+	<link rel="stylesheet" href="index.css" >
+	<link rel="stylesheet" href="coloris.min.css" >
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer ></script> -->
+	<script src="https://cdn.com/google/google_jquery.min.js" defer ></script>
+	<script src="coloris.min.js" defer ></script>
+	<script src="index.js" defer ></script>
+</head>
+<body>
+
+	<main>
+
+		<section id="template" class="section-1" >
+
+			<h1>Typography</h1>
+			<h6>Visual art form</h6>
+
+			<p>
+				Typography is the art and technique of arranging type to make written language <strong>legible, readable and appealing</strong>
+				when displayed. The arrangement of type involves selecting, and letter-spacing, as well as adjusting the space
+				between pairs of letters.
+			</p>
+
+			<p>Source: <a>Wikipedia</a></p>
+
+		</section>
+
+		<section class="section-2" >
+
+			<div class="grid-box" >
+
+				<div class="input-field" >
+					<label for="text-color" >Text color</label>
+					<input id="text-color" class="coloris" type="text" placeholder="eg: #000000" value="#1f1f1f" readonly />
+					<button><span class="remixicon_os20_file-copy"></span></button>
+				</div>
+
+				<div class="input-field" >
+					<label for="bg-color" >Background color</label>
+					<input id="bg-color" class="coloris" type="text" placeholder="eg: #000000" value="#ebebeb" readonly />
+					<button><span class="remixicon_os20_file-copy"></span></button>
+				</div>
+
+				<div class="cccr-box" >
+					<span>Color contrast</span>
+					<div>
+						<div id="contrast-rating" class="contrast-rating" ccr="1" >
+							<span id="ccr-value" >0.00</span>
+							<div>
+								<span id="ccr-label" >Very Strong</span>
+								<div class="circle-strip" >
+									<span></span><span></span><span></span><span></span><span></span>
+								</div>
+							</div>
+						</div>
+						<div id="contrast-st-rating" class="contrast-st-rating" ccr="1" >
+							<span>Small text</span>
+							<div class="circle-strip" >
+								<span></span><span></span><span></span>
+							</div>
+						</div>
+						<div id="contrast-lt-rating" class="contrast-lt-rating" ccr="1" >
+							<span>Large text</span>
+							<div class="circle-strip" >
+								<span></span><span></span><span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="cccr-desc" >
+					<span>Color contrast description</span>
+					<p id="ccr-desc" ></p>
+				</div>
+
+			</div>
+
+		</section>
+
+	</main>
+	
+	<section class="dac-box" >
+		<span>Designed & Coded by</span>
+		<span>Chetan Saini</span>
+	</section>
+
+</body>
+</html>
