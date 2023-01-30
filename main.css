@@ -1,5 +1,3 @@
-/* @import "https://fontfamilies.com/0/typeface/css/?display=swap&family=Product+Sans|Sang+Bleu+Empire"; */
-
 /*---- fonts ----*/
 
 @font-face{
@@ -7,7 +5,7 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: url('https://vectoricons.com/typefaces/coll/p/Product%20Sans/woff/ProductSans-Regular.woff') format('woff');
+    src: url('https://fontfamiliesbychetansaini.on.drv.tw/typeface/p/Product%20Sans/woff/ProductSans-Regular.woff') format('woff');
 }
 
 @font-face{
@@ -15,7 +13,7 @@
     font-weight: 700;
     font-style: normal;
     font-display: swap;
-    src: url('https://vectoricons.com/typefaces/coll/p/Product%20Sans/woff/ProductSans-Bold.woff') format('woff');
+    src: url('https://fontfamiliesbychetansaini.on.drv.tw/typeface/p/Product%20Sans/woff/ProductSans-Bold.woff') format('woff');
 }
 
 /*---- icons ----*/
@@ -40,7 +38,6 @@
 :root{
 
     --ff_p: "Product Sans", sans serif;
-    /* --ff_s: "Sang Bleu Empire", serif; */
 
     --fs_1: 8px;
     --fs_2: 10px;
